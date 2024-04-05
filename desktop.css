@@ -1,0 +1,371 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+
+.container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    min-width: 100% !important;
+}
+
+
+
+
+/*slider*/
+#carouselExampleIndicators{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+#carouselExampleIndicators .carousel-inner{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+#carouselExampleIndicators .carousel-inner:before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item{
+	position: relative;
+	height: 100%;
+	width:100%;
+	background: url('m9.png');
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item .info{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: auto;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+}
+
+
+.carousel-item a.stretched-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1; /* Asegúrate de que esto no interfiera con otros elementos interactivos */
+}
+
+--------------------------------------------
+
+
+
+.bg-primary{
+    background-color: #2a2a6e !important;
+}
+
+.active{
+    color: antiquewhite !important;
+}
+
+.nav-item{
+    font-size: 18px !important;
+    margin-left: 40px !important;
+
+}
+
+.navbar-brand{
+    margin-left: 65px !important;
+    font-size: 29px !important;
+    font-weight: 500 ;
+    color: antiquewhite !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-link {
+    transition: transform 0.2s; /* Agrega una transición suave */
+  }
+
+  .nav-link:hover {
+    transform: scale(1.3); /* Escala el elemento a un 10% más grande al pasar el mouse */
+    color: brown !important;
+  }
+
+
+nav{
+    background-color: rgb(25, 25, 112) !important;
+
+}
+
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 400px); /* Crea dos columnas */
+    grid-template-rows: repeat(2, 300px); /* Crea dos filas */
+    grid-gap: 70px 70px; /* Espacio entre las tarjetas */
+    padding: 20px;
+
+    justify-content: center; /* Centra horizontalmente */
+    align-content: center; /* Centra verticalmente */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.card h2 {
+    margin: 0;
+    margin-bottom: 15px; /* Espacio entre el título y el texto */
+    font-size: 24px;
+    color: #333;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+    text-align: center; /* Centra el texto en la tarjeta */
+}
+
+
+.card {
+    transition: transform 0.5s ease; /* Suaviza la transición */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del card */
+  }
+
+.solicitar{
+    width: 150px;
+    text-align: center !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    border-radius: 50px !important;
+    background-color: #1d1d1f80 !important;
+}
+
+.cosa2{
+position: absolute; /* Posicionamiento absoluto para el botón */
+bottom: 0; /* Alinea el botón en la parte inferior */
+left: 0; /* Alinea el botón a la derecha */
+margin-bottom: 20px; /* Espacio desde el fondo del card */
+margin-left: 20px; /* Espacio desde el lado derecho del card */
+}
+
+.cosa {
+    position: absolute; /* Posicionamiento absoluto para el botón */
+    bottom: 0; /* Alinea el botón en la parte inferior */
+    right: 0; /* Alinea el botón a la derecha */
+    margin-bottom: 20px; /* Espacio desde el fondo del card */
+    margin-right: 20px; /* Espacio desde el lado derecho del card */
+  }
+  
+
+  .circle-badge {
+    position: absolute;
+    top: 40px; /* Ajusta la posición vertical del círculo */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Corrige la posición horizontal */
+    background-color: #1d1d1f80; /* Color del círculo */
+    color: white; /* Color del texto dentro del círculo */
+    width: 30px; /* Ancho del círculo */
+    height: 30px; /* Altura del círculo */
+    border-radius: 50%; /* Para hacer un círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px; /* Tamaño del texto dentro del círculo */
+}
+
+
+.card-title3{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.card-text3{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+  
+.card-text111 p {
+    margin-top: -1px; /* Eliminar el margen superior */
+    margin-bottom: 27px; /* Eliminar el margen inferior */
+    color: rgba(255, 255, 255, 0.744);
+    font-size: 17px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .instagram-circles {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente los círculos */
+    flex-wrap: wrap; /* Permitir que los círculos se envuelvan a la siguiente fila */
+  }
+  
+  .instagram-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(58, 58, 58, 0.107); /* Cambiar el color del círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 10px; /* Añadir margen a los círculos */
+  }
+  
+  .instagram-circle img {
+    max-width: 60%; /* Ajustar el tamaño de la imagen */
+    max-height: 60%;
+  }
+  
+
+  
+  .correo-circles {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente los círculos */
+    flex-wrap: wrap; /* Permitir que los círculos se envuelvan a la siguiente fila */
+  }
+  
+  .correo-circle {
+    width: 310px;
+    height: 70px;
+    border-radius: 10%;
+    background-color: rgba(58, 58, 58, 0.107); /* Cambiar el color del círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 10px; /* Añadir margen a los círculos */
+  }
+  
+  .correo-circle img {
+    max-width: 60%; /* Ajustar el tamaño de la imagen */
+    max-height: 60%;
+  }
+  
+  
+  .correo-circle img {
+    margin-bottom: -4px; /* Ajusta el margen inferior de la imagen */
+  }
+  
+  
+  
+  
+  .instagram-circles {
+    display: flex;
+    justify-content: space-around; /* Esto es para espaciar los círculos uniformemente */
+    align-items: center; /* Centra los círculos verticalmente */
+  }
+  
+  
+  
+  .instagram-circle img {
+    width: 100%; /* Hace que las imágenes llenen completamente el círculo */
+    transition: transform 0.2s ease; /* Suaviza la transición del efecto zoom */
+  }
+  
+  .instagram-circle:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen en un 10% al pasar el mouse */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
